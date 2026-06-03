@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="
+       http://www.springframework.org/schema/beans
+       http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean id="Room" class="com.springlearn.setter.room">
+
+        <property name="roomName" value="sixthClass"/>
+        <property name="roomNumber" value="230"/>
+        <property name="roomType" value="TeachingRoom"/>
+
+    </bean>
+
+    <bean id="TeachingRoom" class="com.springlearn.setter.ClassRoom">
+
+        <property name="room" ref="Room"/>
+
+    </bean>
+
+</beans>
