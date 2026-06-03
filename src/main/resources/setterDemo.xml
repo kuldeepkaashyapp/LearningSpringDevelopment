@@ -6,7 +6,7 @@
        http://www.springframework.org/schema/beans
        http://www.springframework.org/schema/beans/spring-beans.xsd">
 
-    <bean id="Room" class="com.springlearn.setter.room">
+    <bean id="Room" class="com.springLearn.setter.room">
 
         <property name="roomName" value="sixthClass"/>
         <property name="roomNumber" value="230"/>
@@ -14,7 +14,7 @@
 
     </bean>
 
-    <bean id="TeachingRoom" class="com.springlearn.setter.ClassRoom">
+    <bean id="TeachingRoom" class="com.springLearn.setter.ClassRoom">
 
         <property name="room" ref="Room"/>
 

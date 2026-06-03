@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="
+       http://www.springframework.org/schema/beans
+       http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+
+
+
+<bean id="Doctor" class="com.springLearn.referInjection.Doctor">
+    <property name="doctorId" value="10001" />
+    <property name="doctorName" value="Dr. Sanjana yadav"/>
+    <property name="doctorEmail" value="sanjana@gamil.com" />
+    <property name="doctorPhone" value="8995656416" />
+
+</bean>
+
+    <bean id="Hospital" class="com.springLearn.referInjection.Hospital">
+        <property name="hospitalName" value="New Care Hospital" />
+        <property name="doctor" ref="Doctor" />
+
+    </bean>
+
+
+</beans>
