@@ -1,0 +1,57 @@
+                AUTOWIRING BYTYPE FLOW
+
+
+        +----------------------------------+
+        |        Spring Container          |
+        |      (IOC Container)             |
+        +----------------+-----------------+
+                         |
+                         |
+                         v
+
+              Creates Bean of Laptop
+                         |
+                         v
+
+                +----------------+
+                |    Laptop      |
+                |----------------|
+                | compileCode()  |
+                +----------------+
+                         |
+                         |
+                         v
+
+        Checks Dependency inside Student
+
+
+                +-------------------+
+                |      Student      |
+                |-------------------|
+                | private Laptop    |
+                |      laptop;      |
+                +-------------------+
+                         |
+                         |
+                         v
+
+        autowire="byType" Checks TYPE
+
+                Laptop  ←→ Laptop
+
+                         |
+                         v
+
+       Spring Automatically Injects Object
+
+
+                +-------------------+
+                |      Student      |
+                |-------------------|
+                | laptop.compile()  |
+                +-------------------+
+
+
+                    FINAL OUTPUT
+
+            Laptop is Compiling Code

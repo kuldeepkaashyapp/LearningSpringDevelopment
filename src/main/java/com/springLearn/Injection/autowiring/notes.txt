@@ -1,0 +1,63 @@
+Autowiring :
+1. feture of spring framework in which sring container inject the depencdecies autotmatically.
+2.  Autowireing can't be used to inject primitive and string values .it works with references only.
+
+                +----------------------------------+
+                |      Spring Container            |
+                |   (ApplicationContext / IOC)     |
+                +----------------+-----------------+
+                                 |
+                                 |
+                                 v
+                      Creates "game" Bean
+                                 |
+                                 v
+                        +----------------+
+                        |     Game       |
+                        |----------------|
+                        |  play()        |
+                        +----------------+
+                                 |
+                                 |
+                                 v
+             Checks Dependency inside Player Class
+
+
+                        +-------------------+
+                        |      Player       |
+                        |-------------------|
+                        |   private Game    |
+                        |       game;       |
+                        +-------------------+
+                                 |
+                 Autowire="byType" Matches Type
+                                 |
+                                 v
+                  Injects Game Object Automatically
+                                 |
+                                 v
+
+                        +-------------------+
+                        |      Player       |
+                        |-------------------|
+                        |  game.play()      |
+                        | "Player Playing"  |
+                        +-------------------+
+
+
+                            FINAL OUTPUT
+
+                        Game Started
+                        Player is Playing
+
+                AUTOWIRING :
+                    |
+        --------------------------
+        |                         |
+      xml                   Annotations
+   --------
+    no                      @Autowired
+
+    byName
+     constructor
+     autodetect
