@@ -1,4 +1,4 @@
-package com.springLearn.referInjection;
+package com.springLearn.Injection.referInjection;
 
 import lombok.*;
 

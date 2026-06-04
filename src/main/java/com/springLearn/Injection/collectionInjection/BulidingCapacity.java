@@ -1,4 +1,4 @@
-package com.springLearn.collectionInjection;
+package com.springLearn.Injection.collectionInjection;
 
 
 import java.util.List;

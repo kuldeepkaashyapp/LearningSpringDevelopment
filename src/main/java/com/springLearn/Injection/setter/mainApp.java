@@ -1,4 +1,4 @@
-package com.springLearn.setter;
+package com.springLearn.Injection.setter;
 
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;

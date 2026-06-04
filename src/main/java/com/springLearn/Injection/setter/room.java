@@ -1,4 +1,4 @@
-package com.springLearn.setter;
+package com.springLearn.Injection.setter;
 
 public class room {
 
