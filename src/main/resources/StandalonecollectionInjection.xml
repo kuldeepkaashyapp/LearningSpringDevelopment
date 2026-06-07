@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="
+       http://www.springframework.org/schema/beans
+       http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+
+
+
+
+    <bean id="building" class="com.springLearn.Injection.collectionInjection.BulidingCapacity">
+        <property name="roomList">
+            <list>
+                <value>Hall</value>
+                <value>Office</value>
+                <value>Library</value>
+
+            </list>
+
+        </property>
+
+        <property name="roomNumbers">
+            <set>
+            <value>1001</value>
+            <value>1002</value>
+            <value>1003</value>
+
+            </set>
+        </property>
+
+        <property name="staff">
+            <map>
+                <entry key="A" value="Manager"/>
+                <entry key="B" value="employee" />
+                <entry key="c" value="Security"/>
+
+            </map>
+        </property>
+
+
+
+    </bean>
+
+
+
+</beans>

@@ -11,6 +11,7 @@ public class App {
 
         System.out.println("building:"+building.toString());
 
+        System.out.println("building:"+building.getRoomList().getClass().getName());
         //output : building:BulidingCapacity{roomList=[Hall, Office, Library], RoomNumbers=[1001, 1002, 1003], Staff={A=Manager, B=employee, c=Security}}
 
     }
