@@ -9,7 +9,7 @@
 
 
 
-<bean id="Doctor" class="com.springLearn.Injection.referInjection.Doctor">
+<bean id="Doctor" class="com.springLearn.concepts.referInjection.Doctor">
     <property name="doctorId" value="10001" />
     <property name="doctorName" value="Dr. Sanjana yadav"/>
     <property name="doctorEmail" value="sanjana@gamil.com" />
@@ -17,7 +17,7 @@
 
 </bean>
 
-    <bean id="Hospital" class="com.springLearn.Injection.referInjection.Hospital">
+    <bean id="Hospital" class="com.springLearn.concepts.referInjection.Hospital">
         <property name="hospitalName" value="New Care Hospital" />
         <property name="doctor" ref="Doctor" />
 

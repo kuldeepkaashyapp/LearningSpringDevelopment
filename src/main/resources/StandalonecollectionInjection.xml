@@ -10,7 +10,7 @@
 
 
 
-    <bean id="building" class="com.springLearn.Injection.collectionInjection.BulidingCapacity">
+    <bean id="building" class="com.springLearn.concepts.collectionInjection.BulidingCapacity">
         <property name="roomList">
             <list>
                 <value>Hall</value>

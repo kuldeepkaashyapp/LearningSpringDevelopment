@@ -9,7 +9,7 @@
 
  <context:annotation-config/>
 
-<bean name="GamingConsole" class="com.springLearn.Injection.LifeCycle.anotation.GameConsole">
+<bean name="GamingConsole" class="com.springLearn.concepts.LifeCycle.anotation.GameConsole">
     <property name="consoleName" value="PlayStation 5 " />
     <property name="gameName" value="GTA V " />
 </bean>

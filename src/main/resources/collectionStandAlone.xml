@@ -7,13 +7,13 @@
        http://www.springframework.org/schema/beans/spring-beans.xsd">
 
 
-<bean class="com.springLearn.Injection.constructorInjection.PaymentService" name="paymentMethod" >
+<bean class="com.springLearn.concepts.constructorInjection.PaymentService" name="paymentMethod" >
 
     <constructor-arg value="online"/>
 
 </bean>
 
-   <bean class="com.springLearn.Injection.constructorInjection.Orders" name="oders">
+   <bean class="com.springLearn.concepts.constructorInjection.Orders" name="oders">
        <constructor-arg value="1110220" />
        <constructor-arg name="paymentService" ref="paymentMethod" />
    </bean>

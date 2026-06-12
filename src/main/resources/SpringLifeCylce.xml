@@ -7,7 +7,7 @@
        http://www.springframework.org/schema/beans/spring-beans.xsd">
 
 
-<bean name="robot" class="com.springLearn.Injection.LifeCycle.implementation.Robot" init-method="start" destroy-method="stop">
+<bean name="robot" class="com.springLearn.concepts.LifeCycle.implementation.Robot" init-method="start" destroy-method="stop">
     <property name="robotId" value="10220" />
     <property name="robotName" value="chitiBabu" />
 

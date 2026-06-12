@@ -1,6 +1,6 @@
 package com.PracticeSrpingProject.HMS.hostpial;
 
-import com.springLearn.Injection.referInjection.Doctor;
+import com.springLearn.concepts.referInjection.Doctor;
 
 public class hospiatal {
 

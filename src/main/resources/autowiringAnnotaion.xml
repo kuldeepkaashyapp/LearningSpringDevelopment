@@ -8,10 +8,10 @@
 
 <context:annotation-config/>
 
-    <bean name="channel" class="com.springLearn.Injection.autowiring.annotation.YouTubeChannel">
+    <bean name="channel" class="com.springLearn.concepts.autowiring.annotation.YouTubeChannel">
         <property name="channelName" value="TechGanga" />
 
     </bean>
-<bean name="editor" class="com.springLearn.Injection.autowiring.annotation.Editor" />
+<bean name="editor" class="com.springLearn.concepts.autowiring.annotation.Editor" />
 
 </beans>

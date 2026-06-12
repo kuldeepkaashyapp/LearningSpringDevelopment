@@ -6,11 +6,11 @@
        http://www.springframework.org/schema/beans
        http://www.springframework.org/schema/beans/spring-beans.xsd">
 
-<bean class="com.springLearn.Injection.autowiring.xml.Student" name="student"  autowire="byName">
+<bean class="com.springLearn.concepts.autowiring.xml.Student" name="student" autowire="byName">
 
     <property name="name" value="sanjan"/>
 </bean>
-    <bean name="laptop" class="com.springLearn.Injection.autowiring.xml.Laptop" />
+    <bean name="laptop" class="com.springLearn.concepts.autowiring.xml.Laptop" />
 
 
 

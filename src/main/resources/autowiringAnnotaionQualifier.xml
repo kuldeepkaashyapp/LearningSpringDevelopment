@@ -8,9 +8,9 @@
 
 <context:annotation-config/>
 
-    <bean id="videoEditor" class="com.springLearn.Injection.autowiring.QualifierDemo.VideoEditor" />
-    <bean id="reelsEditor" class="com.springLearn.Injection.autowiring.QualifierDemo.ReelEditor" />
-    <bean id="channel" class="com.springLearn.Injection.autowiring.QualifierDemo.YouTubeChannel" />
+    <bean id="videoEditor" class="com.springLearn.concepts.autowiring.QualifierDemo.VideoEditor" />
+    <bean id="reelsEditor" class="com.springLearn.concepts.autowiring.QualifierDemo.ReelEditor" />
+    <bean id="channel" class="com.springLearn.concepts.autowiring.QualifierDemo.YouTubeChannel" />
 
 
 
