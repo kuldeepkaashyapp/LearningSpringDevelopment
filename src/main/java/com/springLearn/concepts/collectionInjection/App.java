@@ -6,7 +6,7 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
 public class App {
 
     public static void main(String[] args) {
-        ApplicationContext context= new ClassPathXmlApplicationContext("collectionInjection.xml");
+        ApplicationContext context= new ClassPathXmlApplicationContext("collection/collectionInjection.xml");
         BulidingCapacity building=(BulidingCapacity) context.getBean("building");
 
         System.out.println("building:"+building.toString());

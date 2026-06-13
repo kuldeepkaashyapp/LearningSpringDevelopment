@@ -6,7 +6,7 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
 public class App {
     public static void main(String[] args) {
 
-        ApplicationContext context = new ClassPathXmlApplicationContext("autowiringxml.xml");
+        ApplicationContext context = new ClassPathXmlApplicationContext("autowiring/autowiringxml.xml");
 
         Student student= context.getBean("student",Student.class);
 

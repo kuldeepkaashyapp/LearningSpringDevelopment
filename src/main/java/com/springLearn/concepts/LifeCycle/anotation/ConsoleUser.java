@@ -5,7 +5,7 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 public class ConsoleUser {
     public static void main(String[] args) {
-       AbstractApplicationContext context = new ClassPathXmlApplicationContext("BeanLifeCycleAnotaion.xml");
+       AbstractApplicationContext context = new ClassPathXmlApplicationContext("LifeCycle/BeanLifeCycleAnotaion.xml");
 
        context.registerShutdownHook();
        GameConsole gameConsole=(GameConsole) context.getBean("GamingConsole");

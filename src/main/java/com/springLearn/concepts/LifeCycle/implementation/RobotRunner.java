@@ -8,7 +8,7 @@ public class RobotRunner {
     public static void main(String[] args) {
 
 
-        AbstractApplicationContext context = new ClassPathXmlApplicationContext("SpringLifeCylce.xml");
+        AbstractApplicationContext context = new ClassPathXmlApplicationContext("LifeCycle/SpringLifeCylce.xml");
 
         Robot runner = (Robot) context.getBean("robot");
 

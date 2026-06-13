@@ -7,7 +7,7 @@ public class App {
 
     public static void main(String[] args) {
         //loading XMl
-        ApplicationContext context=new ClassPathXmlApplicationContext("referInjection.xml");
+        ApplicationContext context=new ClassPathXmlApplicationContext("injection/referInjection.xml");
 
 
         //Get Bean

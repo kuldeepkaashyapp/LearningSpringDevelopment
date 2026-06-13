@@ -6,7 +6,7 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
 public class YoutubeUser {
 
     public static void main(String[] args) {
-    ApplicationContext context = new ClassPathXmlApplicationContext("autowiringAnnotaionQualifier.xml");
+    ApplicationContext context = new ClassPathXmlApplicationContext("autowiring/autowiringAnnotaionQualifier.xml");
 
 
     YouTubeChannel channel=(YouTubeChannel) context.getBean("channel");
