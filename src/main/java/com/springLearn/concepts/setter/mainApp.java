@@ -7,7 +7,7 @@ public class mainApp {
 
     public static void main(String[] args) {
 
-        ApplicationContext context = new ClassPathXmlApplicationContext("setterDemo.xml");
+        ApplicationContext context = new ClassPathXmlApplicationContext("setterinjection/setterDemo.xml");
 
                 ClassRoom classRoom=(ClassRoom) context.getBean("TeachingRoom");
 
