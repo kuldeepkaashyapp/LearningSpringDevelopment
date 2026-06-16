@@ -12,12 +12,12 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
 public class calc {
 
     public static void main(String[] args) {
-    ApplicationContext context = new Annotatiko(AppConfig.class);
+   // ApplicationContext context = new Annotatiko(AppConfig.class);
 
 
-   Calculator calc=(Calculator) context.getBean(Calculator.class);
+   //Calculator calc=(Calculator) context.getBean(Calculator.class);
 
-    calc.toString();
+   // calc.toString();
     }
 
 

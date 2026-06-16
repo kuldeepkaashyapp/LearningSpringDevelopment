@@ -1,4 +1,4 @@
-package com.SpringJDBC.concepts.insertion;
+package com.SpringJDBC.concepts.entites;
 
 
 import lombok.*;
