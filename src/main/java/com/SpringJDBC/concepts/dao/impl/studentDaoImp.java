@@ -4,9 +4,12 @@ import com.SpringJDBC.concepts.dao.StudentDao;
 import com.SpringJDBC.concepts.entites.Student;
 import com.SpringJDBC.concepts.mapper.impl.StudentRowMapper;
 import lombok.*;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.jdbc.core.BeanPropertyRowMapper;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.jdbc.core.RowMapper;
+import org.springframework.stereotype.Component;
 
 import java.util.List;
 
@@ -16,7 +19,12 @@ import java.util.List;
 @AllArgsConstructor
 @NoArgsConstructor
 @ToString
+
+@Component("studentDao")
+
 public class studentDaoImp implements StudentDao {
+    @Autowired
+    @Qualifier("jdbcTemplate")
     private JdbcTemplate jdbcTemplate;
     private final RowMapper<Student> rowMapper =
             new StudentRowMapper();
