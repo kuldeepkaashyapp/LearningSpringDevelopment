@@ -3,6 +3,7 @@ package com.SpringJDBC.concepts.entites;
 
 import lombok.*;
 
+@Builder
 @Setter
 @Getter
 @ToString
