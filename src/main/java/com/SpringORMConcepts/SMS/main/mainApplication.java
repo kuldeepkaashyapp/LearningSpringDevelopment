@@ -4,6 +4,8 @@ import com.SpringORMConcepts.SMS.config.AppConfig;
 import com.SpringORMConcepts.SMS.dao.StudentDao;
 import com.SpringORMConcepts.SMS.daoImpl.StudentDAOImpl;
 import com.SpringORMConcepts.SMS.entity.Student;
+import com.SpringORMConcepts.SMS.service.StudentService;
+import com.SpringORMConcepts.SMS.serviceimpl.StudentServiceImpl;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
@@ -11,12 +13,12 @@ public class mainApplication {
     public static void main(String[] args) {
 
 ApplicationContext context = new AnnotationConfigApplicationContext(AppConfig.class);
-        StudentDao studentDao = (StudentDao) context.getBean("studentDao");
+        StudentService studentService = (StudentService) context.getBean(StudentServiceImpl.class);
 
 
         Student s1 = Student.builder()
 
-                .studentName("Kuldeep Kashyap")
+                .studentName("Kuldeep Kashyap  2")
                 .studentEmail("kuldeep@gmail.com")
                 .studentPhone("9876543210")
                 .course("B.Tech CSE")
@@ -26,7 +28,7 @@ ApplicationContext context = new AnnotationConfigApplicationContext(AppConfig.cl
 
         // peforming insert opration
 
-        System.out.println(studentDao.saveStudent(s1));
+        System.out.println(studentService.findbyRollnumber(2).toString());
 
     }
 }

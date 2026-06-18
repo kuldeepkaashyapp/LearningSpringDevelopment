@@ -12,6 +12,8 @@ import org.springframework.stereotype.Component;
 import org.springframework.stereotype.Repository;
 
 import java.util.List;
+import java.util.Objects;
+
 @Getter
 @Repository("studentDao")
 @Component
@@ -63,8 +65,27 @@ private   boolean flag=false;
     }
 
     @Override
-    public Student findById(int id) {
-        return null;
+    public Student findById(int id) throws NullPointerException {
+        Session session = sessionFactory.openSession();
+        Student student=null;
+        try{
+            transaction=session.beginTransaction();
+
+             student = (Student) session.find(Student.class, id);
+            transaction.commit();
+            System.out.println("student successfully found");
+
+        }catch (Exception e){
+            if(transaction!=null){
+                flag=false;
+                transaction.rollback();
+                System.out.println("student not found"+e.getMessage());
+
+            }
+        }finally{
+            session.close();
+        }
+        return student ;
     }
 
     @Override

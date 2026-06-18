@@ -11,7 +11,7 @@
     <session-factory>
 
         <!-- Database Properties -->
-        <property name="connection.datasource"></property>
+
 
         <property name="hibernate.connection.url">jdbc:postgresql://localhost:5432/social_db </property>
         <property name="hibernate.connection.username">postgres </property>
